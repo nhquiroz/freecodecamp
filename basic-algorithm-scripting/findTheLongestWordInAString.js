@@ -8,5 +8,4 @@ function findLongestWord(str) {
   return descendingSortedList[0].length;
 }
 
-
 findLongestWord("The quick brown fox jumped over the lazy dog");
