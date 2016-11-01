@@ -5,22 +5,22 @@ function capitalizeFirstLetter(word) {
 }
 
 function splitTextCapitalized(splitText) {
+  var capitalizedText = [];
+
   splitText.forEach(function(word) {
     word = word.toLowerCase();
     capitalizedText.push(capitalizeFirstLetter(word));
   });
+
+  return capitalizedText;
 }
 
 function titleCase(str) {
   var splitText = str.split(" ");
-  var capitalizedText = [];
 
-  var splitTextCapitalized = splitText.forEach(function(word) {
-    word = word.toLowerCase();
-    capitalizedText.push(capitalizeFirstLetter(word));
-  });
-
+  capitalizedText = splitTextCapitalized(splitText);
   capitalizedText = capitalizedText.join(" ");
+
   return capitalizedText;
 }
 
