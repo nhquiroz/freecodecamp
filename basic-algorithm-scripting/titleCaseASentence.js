@@ -17,9 +17,10 @@ function splitTextCapitalized(splitText) {
 
 function titleCase(str) {
   var splitText = str.split(" ");
-
-  capitalizedText = splitTextCapitalized(splitText);
-  capitalizedText = capitalizedText.join(" ");
+  var capitalizedList = [];
+  var capitalizedText = "";
+  capitalizedList = splitTextCapitalized(splitText);
+  capitalizedText = capitalizedList.join(" ");
 
   return capitalizedText;
 }
