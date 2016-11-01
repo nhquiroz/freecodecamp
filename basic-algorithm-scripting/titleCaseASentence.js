@@ -1,6 +1,6 @@
 function capitalizeFirstLetter(word) {
   var capitalLetter = word[0].toUpperCase();
-  var remainingString = word.substring(1, word.length);
+  var remainingString = word.slice(1);
   return capitalLetter + remainingString;
 }
 
